@@ -15,7 +15,7 @@ public class Main {
         }
         String inputString = sc.nextLine();
 
-        new LearningBasics(inputInterger,inputArray,inputString); // Create a Object
+        new LearningBasics(inputInterger,inputArray,inputString); // Create Object
 
     }
 }
