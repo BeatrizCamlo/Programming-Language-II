@@ -11,6 +11,10 @@ public class LearningBasics{
         this.ArrayVarible = ArrayVarible;
         this.StringVarible = StringVarible;
     }
+    LearningBasics(int[] Array, String StringV){ // Another constructor with different parameters
+        ArrayVarible = Array;
+        StringVarible = StringV;
+    }
 
     public String thatIsAMethod(String someString){
         return "Print: %s" + StringVarible;
