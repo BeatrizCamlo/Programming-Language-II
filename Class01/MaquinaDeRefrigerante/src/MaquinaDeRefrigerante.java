@@ -23,6 +23,6 @@ public class MaquinaDeRefrigerante{
                 "marca='" + marca + '\'' +
                 ", refrigerantes=" + refrigerantes +
                 ", precos=" + precos +
-                '}';
+                '}'; //
     }
 }
