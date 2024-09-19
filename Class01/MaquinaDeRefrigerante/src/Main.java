@@ -26,7 +26,7 @@ public class Main {
         ArrayList<Double> precos = new ArrayList<>();
         for (String ref : refri) {
             System.out.println("Refrigerante " + ref + ": R$ ");
-            precos.add(Double.parseDouble(ref)); //
+            precos.add(Double.parseDouble(ref));
         }
     }
 }
