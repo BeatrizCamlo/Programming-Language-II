@@ -1,32 +1,23 @@
-import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
 
 public class Main {
     public static void main(String[] args) {
-        Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
 
-        String marca = sc.nextLine();
-        MaquinaDeRefrigerante maquina = new MaquinaDeRefrigerante(marca);
+        MaquinaRefrigerante maquina = new MaquinaRefrigerante(3);
 
+        maquina.imprimirPreco();
 
-        System.out.println("Insira os 3 refrigerantes: ");
-        ArrayList<String> refri = new ArrayList<>();
+        maquina.inserirDinheiro(5);
 
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Refrigerante " + i + ": ");
-            refri.add(sc.nextLine());
-        }
-        maquina.setRefrigerantes(refri);
+        System.out.println("Balanço => R$" + maquina.getBalanco() + ",00");
+        System.out.println();
+
+        maquina.setDarTroco(true);
+
+        maquina.comprarRefrigerante();
 
 
-        System.out.println("Insira os preços dos 3 refrigerantes: ");
-        ArrayList<Double> precos = new ArrayList<>();
-        for (String ref : refri) {
-            System.out.println("Refrigerante " + ref + ": R$ ");
-            precos.add(Double.parseDouble(ref));
         }
     }
-}
