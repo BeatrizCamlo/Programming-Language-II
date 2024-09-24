@@ -5,7 +5,7 @@ public class MaquinaRefrigeranteView {
 
         maquina.imprimirPreco();
 
-        maquina.inserirDinheiro(2);
+        maquina.inserirDinheiro(3);
 
         System.out.println("Balanço => R$" + maquina.getBalanco() + ",00");
         System.out.println();
