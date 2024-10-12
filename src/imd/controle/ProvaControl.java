@@ -1,4 +1,3 @@
-package imd.controle;
 
 public class ProvaControl {
 	
