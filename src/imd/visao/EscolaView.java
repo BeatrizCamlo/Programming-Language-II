@@ -1,4 +1,3 @@
-package imd.visao;
 
 import imd.controle.ProvaControl;
 import imd.modelo.Aluno;
